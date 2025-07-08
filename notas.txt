@@ -1,0 +1,47 @@
+//Atributos: 
+
+async: permite que el escript se cargue asincronicamente con respecto al resto de la pagina.
+
+ej:
+    <script async src="ruta/al/archivo.js"></script>
+
+defer: al igual que el 'async' permite la carga asincronicamente de la pagina, pero retrasa la ejecucion del mismo hasta que el doc haya sido analizado y cargado completamente.
+
+ej:
+    <script defer src="ruta/al/archivo.js"></script>
+
+CONSIDERACIONES:
+    Los scripts nosmalmente se posicionan despues de la la etiqueta <body> para no bloquear la carga de la pagina. Con 'async' y 'defer' tenemos mayor flexibilidad de colocar las etiquetas 'script' en el 'head' facilitando su renderizacion.
+
+    TODOS LOS NAVEGADORES MODERNOS SON COMPATIBLES CON LAS ETIQUETAS 'async' Y 'defer'.
+
+
+//Variables: es una espacio de memoria reservado para almacenar informacion importante del programa
+
+//Declaracion:
+
+//let cliente; 
+
+//La asignacion de valores:
+
+//cliente = "Carlos"
+//cliente ="Horacio"
+//console.log(cliente);
+
+//Inicializar variables:
+
+//let edad = 49;
+//console.log(edad);
+
+//Constantes: es una variable cuyo valor no puede ser modificado una vez que ya se asigno.
+
+//const nacimiento = 1976;
+//console.log(nacimiento);
+
+
+//let edad = 18 ;
+
+//if(edad = 18);
+
+
+
