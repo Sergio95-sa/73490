@@ -24,23 +24,23 @@ if(edad => 18 || dinero) {
 
 // IGUAL (==) COMPARA SI DOS VALORES SON IGUALES IGNORANDO EL DATO
 
-jsx console.log(2 == '2'); // true
+//jsx console.log(2 == '2'); // true
 
 // ESTRICTAMENTE IGUAL (===) COMPARA SI DOS VALORES SON IGUALES Y DEL MISMO TIPO
 
-jsx console.log(2 === '2'); // false
+//jsx console.log(2 === '2'); // false
 
 // NO IGUAL (!) COMPARA SI DOS VALORES NO SON IGUALES IGNORANDO EL TIPO DE DATO
 
-jsx console.log(2 != '3'); // true
+//jsx console.log(2 != '3'); // true
 
 // ESTRICTAMENTE NO IGUAL (!==) COMPARA SI DOS VALORES NO SON IGUALES Y NO SON DEL MISMO TIPO
 
-jsx console.log(2 !== '2'); // true
+//jsx console.log(2 !== '2'); // true
 
 /////////// OPERADORES DE COMPARACION////////////
 
 // <, <=, >, >= (Menor que, Menor o igual que, Mayor que, Mayor o igual que): Utilizados para comparaciones numéricas. 
 
-jsx console.log(3 < 4); // true console.log(5 >= 5); // true <--------------->
+//jsx console.log(3 < 4); // true console.log(5 >= 5); // true <--------------->
 

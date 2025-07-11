@@ -17,6 +17,6 @@ if (calificacion >= 90) {
 let edad = 20;
 let acceso = (edad >= 18) && (edad <= 30);
 console.log(acceso); // true si la edad está entre 18 y 30
-let acceso = (edad)
+let acces = (edad)
 
 
