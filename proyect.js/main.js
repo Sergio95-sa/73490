@@ -1,4 +1,4 @@
-let cartas = [
+const productosArray = [
     { id: 1, nombre: "Mago Oscuro", precio: 100 },
     { id: 2, nombre: "Dragón Blanco de Ojos Azules", precio: 150 },
     { id: 3, nombre: "Calavera Invocada", precio: 80 },
@@ -10,17 +10,40 @@ let cartas = [
     { id: 9, nombre: "Slifer el Dragón del Cielo", precio: 500, imagen: "https://i.imgur.com/nRkNk2t.png" }
 ];
 
+const contenedorProductos = document.querySelector("#Cartas Disponibles");
+const botonesCategorias = document.querySelectorAll("#botonesCategorias");
 
-let contenedor = document.getElementById("productos");
 
-cartas.forEach(carta => {
-    let div = document.createElement("div");
-    div.classList.add("producto");
-    div.innerHTML = `
-        <img src="${carta.imagen}" alt="${carta.nombre}">
-        <strong>${carta.nombre}</strong><br>
-        Precio: $${carta.precio}<br>
-        <button>Agregar al carrito</button>
-    `;
-    contenedor.appendChild(div);
-});
+function cargarProductos(productosElegidos) {
+
+    contenedorProductos.innerHTML = "";
+
+    cartas.forEach(cartas => {
+        let div = document.createElement("div");
+        div.classList.add("producto");
+        div.innerHTML = `
+            <img src="${carta.imagen}" alt="${carta.nombre}">
+            <strong>${carta.nombre}</strong><br>
+            Precio: $${carta.precio}<br>
+            <button>Agregar al carrito</button>
+        `;
+        contenedor.appendChild(div);
+    });
+}
+cargarProductos(productos);
+console.log(botonesCategorias);
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+
+        e.currentTarget.classList.add("active");
+
+        const productosBoton = productos.filter(producto => productosBoton.categoria.id === e.currentTarget.id)
+        cargarProductos(productosBoton);
+        
+
+
+    })
+})
+//let contenedor = document.getElementById("productos");
+
+
