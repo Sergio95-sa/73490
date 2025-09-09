@@ -47,3 +47,55 @@ button {
     width: 202px;
 }
 
+#carrito div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#carrito p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    flex: 1;
+}
+
+/* Estilo general de botones */
+#carrito button {
+    margin-left: 5px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover (cuando pasas el mouse) */
+#carrito button:hover {
+    transform: scale(1.1);
+}
+
+/* Botón sumar ➕ */
+#carrito button:nth-of-type(1) {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Botón restar ➖ */
+#carrito button:nth-of-type(2) {
+    background: #ff9800;
+    color: white;
+}
+
+/* Botón eliminar 🗑️ */
+#carrito button:nth-of-type(3) {
+    background: #f44336;
+    color: white;
+}
+
